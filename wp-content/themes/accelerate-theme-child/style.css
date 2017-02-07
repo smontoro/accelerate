@@ -102,3 +102,101 @@
     color: white;
     font-weight: bold;
 }
+
+/*About Page Styles*/
+
+/***about grid***/
+
+.image-left {
+    float: left;
+}
+
+.image-right {
+    float: right;
+}
+
+.content-left {
+    float: left;
+    width: 700px;
+}
+
+.content-right {
+    float:  right;
+    width: 700px;
+}
+
+#content-strategy #influencer-mapping #social-media #design-development {
+    padding: 50px 0;
+}
+
+/***about header***/
+#about-hero {
+    background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    width: auto;
+    height: 300px;        
+}
+
+.hero-content{
+    color: white;
+    text-align: center;
+    padding: 75px 275px 0 275px;
+    font-size: 18px;
+    font: 'Montserrat';
+    font-weight: bold;
+}
+
+.accelerate {
+    color: #45ac9d;
+}
+
+#our-services {
+   text-align: center;
+   padding: 0 240px 0 240px; 
+}
+
+#our-services h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/***about contact***/
+
+.tag {
+    float: left;
+    margin: 40px 0px 20px 200px;
+    padding: 20px; 0px; 20px 100px;
+}
+
+.about-button {
+   float: right;
+    margin: 40px 200px 20px 0;
+    padding: 20px; 100px; 20px 0;
+}
+
+/*404 Page*/
+
+.error-image {
+    float: left;
+    margin: 20px 0 20px 0;
+}
+
+.error-content {
+    float: right;
+    width: 400px;
+    margin: 20px 0 20px 0;
+}
+
+.error-content h1 {
+    color: #45ac9d;
+    font-size: 40px;
+}
+
+.error-content p {
+    font-size: 22px;
+    
+}
+
+.error-bold {
+    font-weight: bold;
+    color: #45ac9d;
+}

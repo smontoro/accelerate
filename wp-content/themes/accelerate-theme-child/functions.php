@@ -38,5 +38,18 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
+
+      register_post_type( 'about_us',
+        array(
+            'labels' => array(
+                'name' => __( 'About Us' ),
+                'singular_name' => __( 'About Us' )
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array( 'slug' => 'about-us' ),
+        )
+    );
+
 }
 add_action( 'init', 'create_custom_post_types' );
