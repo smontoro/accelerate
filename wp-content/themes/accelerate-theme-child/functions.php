@@ -27,7 +27,7 @@
 
  //Custom post types function
  function create_custom_post_types() {
-    register_post_type( 'case_studies',
+     register_post_type( 'case_studies',
         array(
             'labels' => array(
                 'name' => __( 'Case Studies' ),
@@ -38,23 +38,5 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
-
- }
-
-
-    function accelerate_theme_child_widget_init() {
-	register_sidebar( array(
-	    'name' =>__( 'Homepage sidebar', 'accelerate-theme-child'),
-	    'id' => 'sidebar-2',
-	    'description' => __( 'Appears on the static front page template', 'accelerate-theme-child' ),
-	    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-	    'after_widget' => '</aside>',
-	    'before_title' => '<h3 class="widget-title">',
-	    'after_title' => '</h3>',
-	) 
-  );
-	
 }
-add_action( 'widgets_init', 'accelerate_theme_child_widget_init' );
-
-
+add_action( 'init', 'create_custom_post_types' );
