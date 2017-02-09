@@ -203,19 +203,56 @@
 
 /*Twitter Widget*/
 
-.twitter-feed {
-    width: 44%;
-    float: left;
-    padding: 55px 0;
+
+.tweet-module {
+	width: 44%;
+	float: left;
+    padding: 0 0 40px 5%;
+}
+
+.tweets {
+    list-style: none;
+    padding-top: 30px;
 }
 
 .twitter-feed h3{
-    color: #a6a6a6;
-    font-size: 16px;
-    font-family: 'Montserrat';
-    text-transform: uppercase;
-    text-align: left;
+   font: 16px 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin-top: 0;
+    padding: 
 }
 
 
+
+ul.tweets li {
+    color: #818181;
+    font-style: normal;
+}
+
+.tweets li em {
+    display: none;
+}
+
+.stt-em a{
+    display: none;
+}
+
+#pi_simpletwittertweets-2 h3::after {
+    content: "@sjmontoro";
+    display: block;
+    color: #3b3b3b;
+    margin-top: 36px;
+    text-transform: uppercase;
+}
+
+.widget-title {
+    font: 16px 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+	margin-top: 0;
+    padding-left: 20px;
+}
+
+/*Newsletter Styles*/
 

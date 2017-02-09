@@ -57,18 +57,28 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 			<?php wp_reset_query(); // resets the altered query back to the original ?>
 		</div>
-	</div>
-</section>
 
-<section class="twitter-feed">
-    <div class="twitter-content">
-        <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
-<div id="secondary" class="widget-area" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-2' ); ?>
-</div>
-<?php endif; ?>
+<!---Sidebar to host twitter module-->
+  
+            <?php
+                $twitter_link= get_field('twitter_link');
+                $link_name= get_field('link_name');
+            ?>
+
+
+     <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+        <div id="secondary" class="widget-area tweet-module" role="complementary">
+	        <a href="<?php echo $twitter_link ?>"><?php dynamic_sidebar( 'sidebar-2' ); ?></a>
+            <a href="<?php echo $twitter_link ?>" class="follow-us-link"><?php echo $link_name; ?></a>
+
+
         </div>
-</section>
+    <?php endif; ?>
+
+
+	</div>
+
+
 
 
 
