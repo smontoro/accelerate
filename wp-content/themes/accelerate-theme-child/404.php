@@ -19,7 +19,7 @@ get_header(); ?>
             </div>
 
             <div class="error-image">
-                <img src="http://localhost:46492/wp-content/uploads/2017/02/lost-toddler.png" alt="toddler">
+                <img src=<?php echo get_stylesheet_directory_uri(); ?>/img/lost-toddler.png>
             </div>
 		
 

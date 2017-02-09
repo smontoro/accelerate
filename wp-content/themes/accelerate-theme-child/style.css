@@ -33,9 +33,9 @@
 
 .blog-post {
 	width: 44.75%;
-	padding-right: 50px;
 	float: left;
 }
+
 .blog-post h4 {
 	font: 16px 'Montserrat';
 	color: #a6a6a6;
@@ -200,3 +200,22 @@
     font-weight: bold;
     color: #45ac9d;
 }
+
+/*Twitter Widget*/
+
+.twitter-feed {
+    width: 44%;
+    float: left;
+    padding: 55px 0;
+}
+
+.twitter-feed h3{
+    color: #a6a6a6;
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+
